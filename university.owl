@@ -1,0 +1,260 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#"
+     xml:base="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:university="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CSSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CSSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS101">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CSSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS102">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CSSModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS101"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madusanka</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nipunajith</last_name>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42601</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS101"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS102"/>
+        <Teaches rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M204"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kasun</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kalhara</last_name>
+        <staffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">42603</staffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M201">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M204 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M204">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#MathModule"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student"/>
+        <Studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#M204"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasantha</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kumara</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54308</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student"/>
+        <Studies rdf:resource="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CS101"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Madusanka</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Perera</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">54901</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#CSSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/asus/ontologies/2022/5/university.owl#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
